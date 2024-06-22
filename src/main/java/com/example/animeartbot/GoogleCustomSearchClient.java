@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Random;
 
 public class GoogleCustomSearchClient {
-    private static final String API_KEY = "AIzaSyDUGLziQxm-Kket-Zjmz3v86tWEh9O0I6U";  // Замініть на ваш API ключ
+    private static final String API_KEY = "AIzaSyDUGLziQxm-Kket-Zjmz3v86tWEh9O0I6U";  //  API ключ гугла, заменить если при поиске выдает ошибку про дофига запросов
     private static final String GOOGLE_SEARCH_URL = "https://www.googleapis.com/customsearch/v1";
     private final OkHttpClient httpClient = new OkHttpClient();
     private final Random random = new Random();
@@ -27,7 +27,7 @@ public class GoogleCustomSearchClient {
         urlBuilder.addQueryParameter("cx", site);
         urlBuilder.addQueryParameter("q", query);
         urlBuilder.addQueryParameter("searchType", "image");
-        urlBuilder.addQueryParameter("start", String.valueOf(startIndex)); // Додайте параметр start
+        urlBuilder.addQueryParameter("start", String.valueOf(startIndex));
 
         Request request = new Request.Builder()
                 .url(urlBuilder.build().toString())

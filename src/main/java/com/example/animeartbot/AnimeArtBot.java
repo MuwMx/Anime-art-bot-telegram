@@ -26,6 +26,9 @@ public class AnimeArtBot extends TelegramLongPollingBot {
     private final Map<Long, String> userSites = new HashMap<>();
     private final Map<String, String> fileLinks = new HashMap<>();
 
+
+
+    //отдельные ключи для поисковиков ОЧЕНЬ ВАЖНО
     private static final String DANBOORU = "e1880fa03a94f4dc0";
     private static final String ZEROCHAN = "820a11e93fa334e27";
     private static final String GLOBAL = "521df7b00515b479b";
