@@ -107,7 +107,7 @@ public class AnimeArtBot extends TelegramLongPollingBot {
     private void sendSiteConfirmation(long chatId, String siteName) {
         String confirmationMessage;
         if (siteName.equals("Global🌍")) {
-            confirmationMessage = "Ви обрали Global🌍, це пошук у всьому інтернеті. Але все ж краще використовувати Danbooru або Zerochan для пошуку аніме-артів😊";
+            confirmationMessage = "Ви обрали Global🌍, це пошук у всьому інтернеті можна шукати будь які фото.\nАле все ж краще використовувати Danbooru або Zerochan для пошуку аніме-артів😊";
         } else {
             confirmationMessage = "Ви обрали " + siteName + " для пошуку аніме-артів.";
         }
